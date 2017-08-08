@@ -73,8 +73,7 @@ public class KeyFunctions {
     public static void visible(Frame frame,SystemTray st,TrayIcon myTray){
             try {
                 st.add(myTray);
-            } catch (AWTException ex) {
-                Logger.getLogger(KeyFunctions.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (Exception ex) {
             }
             frame.setVisible(true);
         
